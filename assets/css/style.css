@@ -1,0 +1,100 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Mono:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: #252525;
+}
+
+header h1 a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar {
+    background-color: #252525;
+    padding: 0 1rem;
+    position: fixed;
+    width: 100%;
+    height: 5vh;
+    box-shadow: 0 2px 2px;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav {
+    background-color: orange;
+    position: absolute;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
+
+#nav-items {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+#nav-items a {
+    text-decoration: none;
+}
+
+/* nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+    list-style-type: none;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+main {
+    background-color: blue;
+    flex: 1 0 auto;
+}
+
+footer {
+    background-color: red;
+    width: 100%;
+    height: 3rem;
+}
+
+#social-networks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        display: flex;
+    }
+
+    #nav-toggle {
+        display: none;
+    }
+}

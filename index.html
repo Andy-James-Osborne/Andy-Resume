@@ -11,24 +11,29 @@
 </head>
 <body>
     <header>
-        <h1>My Resume</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
+        <h1><a href="index.html">My Resume</a></h1>
+        <div id="navbar">
+            <input type="checkbox" name="nav-toggle" id="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
+            <nav>
+                <ul id="nav-items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>    
     </header>
 
     <main></main>
 
     <footer>
-        <ul>
+        <ul id="social-networks">
             <li><a href="https/www.github.com/">GitHub</a></li>
             <li><a href="https/www.linkedin">LinkedIn</a></li>
         </ul>
     </footer>
-    
+    <!-- font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/3cf5de8ace.js" crossorigin="anonymous"></script>
 </body>
 </html>
