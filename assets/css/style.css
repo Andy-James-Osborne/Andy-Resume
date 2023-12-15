@@ -22,10 +22,15 @@ h1, h2, h3 {
     color: #252525;
 }
 
+a {
+    color: white;
+}
+
 header h1 a {
     text-decoration: none;
     display: flex;
     justify-content: center;
+    color: #252525;
 }
 
 #navbar {
@@ -44,12 +49,16 @@ header h1 a {
 }
 
 nav {
-    background-color: orange;
+    background-color:#fff;
     position: absolute;
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
     top: 100%;
+    border-left: 2px solid #252525;
+    border-right: 2px solid #252525;
+    border-bottom: 2px solid #252525;
+    border-radius: 0 0 5% 5%;
 }
 
 #nav-items {
@@ -90,11 +99,32 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-    nav {
-        display: flex;
-    }
-
-    #nav-toggle {
+    /* nav toggle removed for tablets size */
+    #nav-toggle:checked~nav, #nav-toggle, .nav-toggle-label {
         display: none;
     }
+
+    #navbar nav {
+        background-color: #252525;
+        position: absolute;
+        top: 5px;
+        border: none;
+        box-shadow: none;
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    #nav-items {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        text-decoration: none;
+    }
+
+    
 }
