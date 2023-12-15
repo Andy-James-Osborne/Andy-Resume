@@ -68,6 +68,7 @@ nav {
 
 #nav-items a {
     text-decoration: none;
+    color: #252525;
 }
 
 /* nav toggle */
@@ -122,9 +123,27 @@ footer {
     #nav-items {
         display: flex;
         width: 100%;
-        justify-content: space-around;
+        justify-content: flex-end;
         text-decoration: none;
+    }   
+
+    #nav-items > li {
+        padding: 0 1rem 0 1rem;
+        border-right: 2px solid white;
     }
 
-    
+    #nav-items a {
+        text-decoration: none;
+        color: white;
+    }
+
+    li:nth-last-child(3) {
+        border: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #nav-items {
+        font-size: 1.5rem;
+    }
 }
